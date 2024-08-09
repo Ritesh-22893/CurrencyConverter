@@ -1,0 +1,138 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    transition: 800ms ease-in-out;
+    height: screen;
+    width: 100vw;
+    background-color: #E9D975;
+}
+
+.topic {
+    margin-top: 4.5rem;
+    color: olivedrab;
+    font-size: x-large;
+    font-weight: bold;
+    /* text-decoration: underline wavy; */
+}
+
+form {
+    background-color: #fae575;
+    margin-top: 2rem;
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 0.1rem solid #5D4A66;
+    border: none;
+    box-shadow: 10px 15px 5px 5px #B2BD7E;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+/* on flex direction row */
+/* cross axis --> vertical axis */
+/* main axis --> horizontal axis */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.acceptAmt input {
+    margin-top: 0.6rem;
+    font-size: large;
+    border: none;
+    color: gary;
+    outline: none;
+    border-radius: 4rem;
+    padding-left: 1.2rem;
+    height: 4rem;
+    width: 98%;
+}
+
+.dropdown-menu {
+    padding: 0 1.2rem 0 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.dropdown-menu img {
+    width: 4rem;
+}
+
+.dropdown-menu select {
+    font-size: small;
+    background-color: #749C90;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 2rem;
+    font-weight: bold;
+    padding: 0.5rem 0.6rem;
+
+}
+
+form h3 {
+    padding: 0 0 0 2rem;
+    color: #968946;
+}
+
+.dropdown-menu h4 {
+    color: #749C75;
+}
+
+.dropdown-menu i {
+    margin-top: 2.5rem;
+    color: #968946;
+}
+
+.submitBtn {
+    padding: 0.5rem;
+    border-radius: 3rem;
+    height: 4rem;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    transition: 200ms ease-out;
+    background-color: #749C75;
+}
+
+.submitBtn:hover {
+    background-color: #749C00;
+}
+
+
+@media only screen and (min-width: 750px) {
+    form {
+        background-color: #fae570;
+        margin-top: 2rem;
+        height: fit-content;
+        width: 37%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        border: 0.1rem solid #5D4A66;
+        border: none;
+        box-shadow: 10px 15px 5px 5px #B2BD7E;
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+}

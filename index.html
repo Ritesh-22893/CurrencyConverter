@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- for importing exchange icon from fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- for adding google fonts poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <p class="topic">CURRENCY CONVERTER</p>
+        <form>
+            <div class="acceptAmt">
+                <input placeholder="Enter amount to convert" type="text">
+            </div>
+
+            <div class="dropdown-menu">
+                <div class="from">
+                    <h4>From</h4>
+                    <img src="https://flagsapi.com/NP/flat/64.png">
+                    <div class="selectcountries">
+                        <select name="from">
+                            <!-- <option value="nepal">NP</option>
+                            <option value="india">IN</option>
+                            <option value="australia">AU</option> -->
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left fa-2x"></i>
+                <div class="into">
+                    <h4>Into</h4>
+                    <img src="https://flagsapi.com/IN/flat/64.png">
+                    <div class="selectcountries">
+                        <select name="into">
+                            <!-- <option value="india">IN</option>
+                            <option value="nepal">NP</option>
+                            <option value="australia">AU</option> -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <h3 class="msg">160 NRS = 100 INR</h3>
+            <button class="submitBtn">Click here to convert</button>
+        </form>
+    </div>
+    <script src="countrylist.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
