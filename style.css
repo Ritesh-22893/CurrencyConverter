@@ -9,7 +9,7 @@ body {
     font-weight: 600;
     font-style: normal;
     transition: 800ms ease-in-out;
-    height: screen;
+    height: 100vh;
     width: 100vw;
     background-color: #E9D975;
 }
@@ -48,6 +48,39 @@ form {
     justify-content: center;
     height: 100%;
 
+}
+
+.errorMessage i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: red;
+    font-size: x-large;
+    cursor: pointer
+}
+
+.errorMessage h3 {
+    color: rgb(233, 60, 60);
+}
+
+.errorMessage {
+    position: fixed;
+    display: none;
+    gap: 1rem;
+    top: 3rem;
+    right: 2rem;
+    background-color: #fae580;
+    box-shadow: 10px 15px 5px 5px #B2BD7E;
+    border-radius: 3rem;
+    padding: 1.5rem 2rem;
+    justify-content: center;
+    align-items: center;
+    color: rgb(134, 179, 45);
+    transition: 2s ease-in-out ;
 }
 
 .acceptAmt input {

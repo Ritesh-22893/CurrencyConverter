@@ -23,6 +23,14 @@
 <body>
     <div class="container">
         <p class="topic">CURRENCY CONVERTER</p>
+<!-- for displaying error message when input is invalid -->
+        <div class="errorMessage">
+          <div>
+            <h3>Warning !!</h3>
+            <h4>Please enter valid amount.</h4>
+          </div> 
+            <i onclick="hideErrorMsg()" class="fa-solid fa-xmark"></i>
+        </div>
         <form>
             <div class="acceptAmt">
                 <input placeholder="Enter amount to convert" type="text">
